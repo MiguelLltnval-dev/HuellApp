@@ -1,0 +1,32 @@
+{
+	"info": {
+		"name": "HuellApp_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Mascota",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"usuarioId\": \"60d5ec49c1b4a925f4b3014a\",\n    \"nombre\": \"Toby\",\n    \"especie\": \"Perro\",\n    \"color\": \"Dorado\",\n    \"ciudad\": \"Popayán\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mascotas",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "mascotas"]
+				}
+			},
+			"response": []
+		}
+	]
+}
